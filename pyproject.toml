@@ -23,3 +23,8 @@ build-backend = "uv_build"
 members = [
     "pytest",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.1",
+]
