@@ -2,6 +2,12 @@ version = 1
 revision = 3
 requires-python = ">=3.14"
 
+[manifest]
+members = [
+    "pytest",
+    "pytorch-demo",
+]
+
 [[package]]
 name = "filelock"
 version = "3.20.0"
@@ -276,6 +282,21 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/35/73/e29aa0c9c666cf787628d3f0dcf379f4791fba79f4936d02f8b37165bdf8/pillow-12.0.0-cp314-cp314t-win_amd64.whl", hash = "sha256:905b0365b210c73afb0ebe9101a32572152dfd1c144c7e28968a331b9217b94a", size = 7148282, upload-time = "2025-10-15T18:23:55.316Z" },
     { url = "https://files.pythonhosted.org/packages/c1/70/6b41bdcddf541b437bbb9f47f94d2db5d9ddef6c37ccab8c9107743748a4/pillow-12.0.0-cp314-cp314t-win_arm64.whl", hash = "sha256:99353a06902c2e43b43e8ff74ee65a7d90307d82370604746738a1e0661ccca7", size = 2525630, upload-time = "2025-10-15T18:23:57.149Z" },
 ]
+
+[[package]]
+name = "pytest"
+version = "0.1.0"
+source = { editable = "pytest" }
+
+[package.dev-dependencies]
+dev = [
+    { name = "pytest" },
+]
+
+[package.metadata]
+
+[package.metadata.requires-dev]
+dev = [{ name = "pytest", editable = "pytest" }]
 
 [[package]]
 name = "pytorch-demo"
