@@ -1,2 +1,2 @@
 # PyTorch_demo
-- lightning 2.6.0
+- 変更元のコード：Pytorch Lightningのチュートリアル
